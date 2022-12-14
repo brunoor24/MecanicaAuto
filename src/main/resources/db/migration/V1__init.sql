@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS client(
+	id SERIAL,
+	name VARCHAR(50) NOT NULL,
+	lastName VARCHAR(50) NOT NULL,
+	dni VARCHAR(15) NOT NULL,
+	phone VARCHAR (10) NOT NULL,
+    email VARCHAR (20) NOT NULL,
+    status BOOLEAN
+    PRIMARY KEY (id),
+    UNIQUE(dni)
+);
